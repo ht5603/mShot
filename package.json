@@ -20,6 +20,7 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "express-session": "^1.15.3",
+    "mongoose": "^4.10.6",
     "react": "*",
     "react-dom": "*",
     "react-router": "^4.1.1",
