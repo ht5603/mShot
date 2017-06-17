@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="../resource/navBar.css" >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>React example</title>
+    </head>
+    <body>
+     
+      <div id="app"></div>
+      
+
+           <div class="container-fluid">
+               <div class="row navbar">
+                    <div  class="col-md-3">
+                    
+                    </div>
+                    <div  class="col-md-3">
+                    
+                    </div>
+                    <div  class="col-md-3" id="navBar">
+                        
+                    </div>
+               </div>
+           </div>
+
+      <script src="bundle.js"></script>
+      <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1438931399497252',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.8'
+              });
+         FB.AppEvents.logPageView();   
+        };
+
+       (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/zh_TW/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
+    </body>
+</html>
