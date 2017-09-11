@@ -1,8 +1,11 @@
 
 var express = require('express');
 
+
 var bodyParser = require('body-parser');
 var app = express();
+var http = require('http').Server(app);//for socket.io
+var io = require('socket.io')(http);//for socket.io
 
 var path = require('path');
 var config = require('./webpack.config.js');
@@ -42,9 +45,20 @@ app.use(bodyParser.json());
 /*路由解析*/    
 frontRouter = require( './routes/frontRoute.js' )(app);
     
+/* websocket */
+
+io.on('connection', function(socket){
+  console.log('a user connected');
+});
+
+http.listen(port, function(){
+  console.log('listening on *:8000');
+});    
+
+
 
 
     
 
-app.listen( port,()=> console.log('server start!') );
+// app.listen( port,()=> console.log('server start!') );
 
